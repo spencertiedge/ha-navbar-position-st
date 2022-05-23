@@ -52,7 +52,7 @@ class NavbarPosition {
 
     if (appHeader && (appHeader.style.top !== 'auto' || appHeader.style.bottom !== '0px')) {
       appHeader.style.setProperty('top', 'auto', 'important');
-      appHeader.style.setProperty('bottom', '0px', 'important');
+      appHeader.style.setProperty('bottom', '20px', 'important');
     }
   }
 
