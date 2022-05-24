@@ -50,9 +50,9 @@ class NavbarPosition {
   applyNavbarPositionChanges() {
     let appHeader = this.huiRootElement?.querySelector("app-header");
 
-    if (appHeader && (appHeader.style.top !== 'auto' || appHeader.style.bottom !== '0px')) {
+    if (appHeader && (appHeader.style.top !== 'auto' || appHeader.style.bottom !== '35px')) {
       appHeader.style.setProperty('top', 'auto', 'important');
-      appHeader.style.setProperty('bottom', '25px', 'important');
+      appHeader.style.setProperty('bottom', '35px', 'important');
     }
   }
 
