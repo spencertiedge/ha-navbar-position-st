@@ -52,7 +52,7 @@ class NavbarPosition {
 
     if (appHeader && (appHeader.style.top !== 'auto' || appHeader.style.bottom !== '35px')) {
       appHeader.style.setProperty('top', 'auto', 'important');
-      appHeader.style.setProperty('bottom', '35px', 'important');
+      appHeader.style.setProperty('bottom', '30px', 'important');
     }
   }
 
@@ -72,9 +72,9 @@ class NavbarPosition {
         contentContainer.style.setProperty('padding-bottom', '81px');
 
         this.contentContainerMutationObserver = new MutationObserver(() => {
-          if (contentContainer.style.paddingTop != '0px' || contentContainer.style.paddingBottom != '81px') {
+          if (contentContainer.style.paddingTop != '0px' || contentContainer.style.paddingBottom != '86px') {
             contentContainer.style.paddingTop = '0px';
-            contentContainer.style.paddingBottom = '81px';
+            contentContainer.style.paddingBottom = '86px';
           }
         }).observe(contentContainer, {
           attributes: true,
